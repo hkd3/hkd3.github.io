@@ -23,11 +23,11 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         
-        <ul class="nav">
+        <nav>
           {% for item in site.data.navigation %}
-          <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+          <a href="{{ item.link }}">{{ item.name }}</a><br />
           {% endfor %}
-        </ul>
+        </nav>
         
         
         {% if site.github.is_project_page %}
